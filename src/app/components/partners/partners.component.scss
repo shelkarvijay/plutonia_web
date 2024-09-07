@@ -1,0 +1,14 @@
+@import "../../../assets/colors.scss";
+.partners-container{
+    padding: 60px;
+    h2 {
+        font-family: "Montserrat";
+        font-style: normal;
+        font-weight: 700;
+        font-size: 2rem;
+        line-height: 39px;
+        color: $main-color;
+        padding-top: 10px;
+        margin: 0;
+    }
+}   

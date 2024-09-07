@@ -1,0 +1,77 @@
+<div class="contact-section">
+    <div class="contact-header">
+        <h2>Get In Touch</h2>
+        <p class="mb-0">Drop us a line or visit us for cup of Coffee!</p>
+        <p>We glad to see you!</p>
+    </div>
+    <div class="contact-container row">
+        <div class="col-md-8 col-sm-12 p-3" style="background-color: white;">
+            <!-- <div> -->
+                <h4>Send your request</h4>
+                <form [formGroup]="contactForm">
+                    <div class="row input-rows">
+                        <mat-form-field class="col-md">
+                            <mat-label>First Name</mat-label>
+                            <input matInput name="fName" formControlName="fName" required>
+                        </mat-form-field>
+                        <mat-form-field class="col-md">
+                            <mat-label>Last Name</mat-label>
+                            <input matInput name="lName" formControlName="lName" required>
+                        </mat-form-field>
+                    </div>
+                    <div class="row input-rows">
+                        <mat-form-field class="col-md">
+                            <mat-label>Mobile</mat-label>
+                            <input matInput name="mobileNo" formControlName="mobileNo" required>
+                        </mat-form-field>
+                        <mat-form-field class="col-md">
+                            <mat-label>Email</mat-label>
+                            <input matInput name="emailId"
+                                formControlName="emailId" required>
+                        </mat-form-field>
+                    </div>
+
+                    <div class="row input-rows">
+                        <mat-form-field class="col-md">
+                            <mat-label>Message</mat-label>
+                            <textarea matInput name="message" formControlName="message" required> </textarea>
+                        </mat-form-field>
+                    </div>
+                    <div class="row d-flex justify-content-center">
+                        <button class="submit-btn" type="button" [disabled]="contactForm.invalid">Send</button>
+                        <!-- <button mat-flat-button>Basic</button> -->
+                    </div>
+                </form>
+            <!-- </div> -->
+        </div>
+        <div class="col-md-4 col-sm-12 p-3 container-reach-out">
+            <h4>Reach Out Us Hear</h4>
+            <div class="row">
+                <div class="col-2">
+                    <mat-icon> location_on</mat-icon>
+                </div>
+                <div class="col-10">
+                    <p>Office no 6, Nirmala Nivas, Near Datt Mandir, New Sangvi, Pune 411027</p>
+                </div>
+            </div>
+    
+            <div class="row">
+                <div class="col-2">
+                    <mat-icon> phone</mat-icon>
+                </div>
+                <div class="col-10">
+                    <p>+91 8484854215</p>
+                </div>
+            </div>
+    
+            <div class="row">
+                <div class="col-2">
+                    <mat-icon> mail_outline</mat-icon>
+                </div>
+                <div class="col-10">
+                    <p>shelkarvijay94@gmail.com</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

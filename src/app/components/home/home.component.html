@@ -1,0 +1,63 @@
+<section>
+    <div class="main-conatiner">
+        <ngb-carousel class="carousel" #carousel [interval]="5000" [pauseOnHover]="pauseOnHover"
+            [pauseOnFocus]="pauseOnFocus" (slide)="onSlide($event)" [showNavigationIndicators]="false">
+            <!-- @for (img of images; track img; let i = $index) { -->
+            <ng-template ngbSlide *ngFor="let img of images; let i = index">
+                <div class="carousel-container">
+                    <div>
+                        <p><span>{{img.slogan}}</span>{{img.para1}} <span>{{img.spanText}}</span> {{img.para2}}</p>
+                    </div>
+                    <div>
+                        <img src="../../../assets/gif/{{img.imageName}}" alt="">
+                    </div>
+                </div>
+            </ng-template>
+            <!-- } -->
+        </ngb-carousel>
+    </div>
+</section>
+<section>
+    <div class="custom-shape-divider-top-1720594465">
+        <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
+            <path
+                d="M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V0H0V27.35A600.21,600.21,0,0,0,321.39,56.44Z"
+                class="shape-fill"></path>
+        </svg>
+    </div>
+    <div class="section-title efforts">
+        <!-- <div class="container heading">
+            <div class="hover-text"><span>Our Efforts</span></div>
+        </div> -->
+        <!-- <div class="title-with-border-left">
+            <p style="text-align: center;">Our Efforts</p>
+        </div> -->
+        
+        <div class="divider"><span [ngClass]="{'left-divider': isScrollEfforts}"></span><p>Our Efforts</p><span [ngClass]="{'right-divider': isScrollEfforts}"></span></div>
+        <div class="work-gallary">
+            <div class="row gap-3 justify-content-center">
+                <div class="gallary-container col-md-3 col-xs-5">
+                    <img src="../../../assets/gif/work1.jpg" alt="" width="100%" height="100%">
+                </div>
+                <div class="gallary-container col-md-3 col-xs-5">
+                    <img src="../../../assets/gif/work_2.jpg" alt="" width="100%" height="100%">
+                </div>
+                <div class="gallary-container col-md-3 col-xs-5">
+                    <img src="../../../assets/gif/work_3.jpg" alt="" width="100%" height="100%">
+                </div>
+                <div class="gallary-container col-md-3 col-xs-5">
+                    <img src="../../../assets/gif/work_4.jpg" alt="" width="100%" height="100%">
+                </div>
+            </div>
+        </div>
+    </div>
+    
+</section>
+<div class="divider"><span [ngClass]="{'left-divider': isScrollAbout}"></span><p>Who We Are</p><span [ngClass]="{'right-divider': isScrollAbout}"></span></div>
+<section>
+    <app-about></app-about>
+</section>
+<app-partners>
+    <div class="divider"><span [ngClass]="{'left-divider': isScrollPartners}"></span><p>Our Partners</p><span [ngClass]="{'right-divider': isScrollPartners}"></span></div>
+</app-partners>
+<app-services></app-services>

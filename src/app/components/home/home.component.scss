@@ -1,0 +1,117 @@
+@import "../../../assets/colors.scss";
+@import "../../../assets/scss/section-title.scss";
+@import "../../../assets/scss/divider.scss";
+.main-conatiner {
+    height: 100vh;
+    padding: 60px 150px;
+}
+
+.carousel-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    img {
+        width: 400px;
+    }
+}
+
+.carousel-container div:nth-child(1) {
+    text-align: center;
+    // width: 300px;
+    p {
+        font-size: 33px;
+    }
+    span:nth-child(1) {
+        // color: #257aab;
+        font-weight: bold;
+        // text-transform: uppercase;
+    }
+    span:nth-child(2) {
+        color: #257aab;
+        font-weight: bold;
+        text-transform: uppercase;
+    }
+}
+
+.custom-shape-divider-top-1720594465 {
+    // position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    // overflow: hidden;
+    line-height: 0;
+    // transform: rotate(180deg);
+    background-color: $secondary-color;
+}
+
+.custom-shape-divider-top-1720594465 svg {
+    position: relative;
+    display: block;
+    width: calc(100% + 1.3px);
+    height: 80px;
+}
+
+.custom-shape-divider-top-1720594465 .shape-fill {
+    fill: #FFFFFF;
+}
+
+.work-gallary{
+    padding: 20px 150px 80px;
+    position: relative;
+    @media (max-width: 768px) {
+      padding: 10px 10px 100px;
+    }
+    // bottom: 70px;
+}
+
+.gallary-container {
+  border: 1px solid #cbc6c6;
+  border-radius: 5px;
+  background-size: cover;
+  background-color: white;
+  padding: 20px;
+  box-shadow: 0px 3px 45px 0px #a2a7a9;
+  width: 300px;
+  overflow: hidden;
+}
+
+/* [2] Transition property for smooth transformation of images */
+.gallary-container {
+  transition: transform .5s ease;
+}
+
+/* [3] Finally, transforming the image when container gets hovered */
+.gallary-container:hover {
+  transform: scale(1.5);
+}
+
+@media (max-width: 426px){
+    .main-conatiner {
+        height: 55vh;
+        padding: 74px 40px;
+    }
+    .carousel-container img {
+        width: 200px;
+    }
+    .carousel-container div:nth-child(1) {
+        p {
+            font-size: 15px;
+        }
+    }
+}
+
+@media (max-width: 768px) and (min-width: 427px){
+    .main-conatiner {
+        height: 88vh;
+        padding: 100px 64px;
+    }
+    .carousel-container img {
+        width: 320px;
+    }
+    .carousel-container div:nth-child(1) {
+        p {
+            font-size: 28px;
+        }
+    }
+}
