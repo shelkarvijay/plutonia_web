@@ -1,0 +1,151 @@
+@import "../../../../src/assets/colors.scss";
+.about-us {
+    color: #257aab;
+    height: 300px;
+    padding-top: 113px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    p {
+        font-size: 50px;
+        font-weight: 500;
+        text-transform: uppercase;
+        letter-spacing: 0.5em;
+        @media (max-width: 426px) {
+            font-size: 2em;
+        }
+    }
+}
+  
+  .c2 .word {
+    display: inline-block;
+    line-height: 1em;
+  }
+  
+.service-container {
+    // height: 500px;
+    padding: 100px;
+    // background-image: linear-gradient(white, #d1d1d1);
+    @media (max-width: 768px) {
+        flex-direction: column !important;
+        padding: 0 20px;
+    }
+
+    // background-color: grey;
+}
+
+.xs-mb {
+    @media (max-width: 768px) {
+        margin-bottom: 40px;
+    }
+}
+
+.service-item {
+    // border: 1px solid red;
+    width: 100%;
+    // height: 200px;
+}
+
+.example-card {
+    // width: 350px;
+    // padding: 20px;
+    // height: 566px;
+}
+
+.para {
+    color: rgb(237, 237, 237);
+}
+
+.middle-content {
+    background-color: $main-color;
+}
+
+.innovation {
+    background-color: white;
+}
+
+h4{
+    color: $main-color;
+    text-transform: uppercase;
+}
+
+.example-header-image {
+    background-image: url('https://material.angular.io/assets/img/examples/shiba1.jpg');
+    background-size: cover;
+  }
+
+.fade-in-image {
+    animation: fadeIn 9s;
+    -webkit-animation: fadeIn 9s;
+    -moz-animation: fadeIn 9s;
+    -o-animation: fadeIn 9s;
+    -ms-animation: fadeIn 9s;
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0.5;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+.fade-in-text-1 {
+    position: relative;
+    animation: myfirst1 12s 1;
+}
+
+@keyframes myfirst1 {
+    25% {
+        right: 0px;
+        top: 0px;
+    }
+
+    0% {
+        right: 200px;
+        top: 0px;
+    }
+}
+
+.fade-in-text-2 {
+    position: relative;
+    animation: myfirst2 12s 1;
+}
+
+@keyframes myfirst2 {
+    25% {
+        top: 0px;
+        bottom: 0px;
+    }
+
+    0% {
+        top: 200px;
+        bottom: 0px;
+    }
+}
+
+.fade-in-text-3 {
+    position: relative;
+    animation: myfirst3 12s 1;
+}
+
+@keyframes myfirst3 {
+    25% {
+        left: 0px;
+        top: 0px;
+    }
+
+    0% {
+        left: 200px;
+        top: 0px;
+    }
+}
+
+.middle-header img {
+    display: block;
+    width: 100%;
+    height: 230px;
+}
