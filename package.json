@@ -25,7 +25,6 @@
     "@popperjs/core": "^2.11.6",
     "angular-animations": "^0.11.0",
     "bootstrap": "^5.2.3",
-    "ng-image-slider": "^7.0.1",
     "rxjs": "~7.8.0",
     "tslib": "^2.3.0",
     "zone.js": "~0.13.0"
