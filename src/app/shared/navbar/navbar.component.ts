@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { Router, NavigationEnd, NavigationStart } from '@angular/router';
 import { Location, PopStateEvent } from '@angular/common';
+import { filter } from 'rxjs';
 
 @Component({
     selector: 'app-navbar',
@@ -11,7 +12,6 @@ export class NavbarComponent implements OnInit {
     public isCollapsed = true;
     private lastPoppedUrl: any;
     private yScrollStack: any[] = [];
-
     constructor(public location: Location, private router: Router) {
     }
 

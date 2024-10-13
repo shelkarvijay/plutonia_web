@@ -50,7 +50,7 @@ export class AppComponent implements OnInit {
       this.router.events.pipe(filter(event => event instanceof NavigationEnd)).subscribe((events: any) => {
 
         console.log(events.url);
-        if(events.url === '/contact') {
+        if(events.url === '/contact' || events.url === '/about-us') {
             navbar.classList.add('nav-bg-light');
         } else if(events.url === '/home' || events.url === '/') {
             navbar.classList.remove('nav-bg-light');

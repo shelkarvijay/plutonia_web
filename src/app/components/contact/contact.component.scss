@@ -1,7 +1,22 @@
+// @import "../../../../src/assets/";
+
 .contact-section {
     background-color: #257aab;
     height: 90vh;
 }
+
+.c2 {
+    // font-weight: 800;
+    font-size: 2em;
+    // text-transform: uppercase;
+    letter-spacing: 10px;
+  }
+  
+  .c2 .word {
+    display: inline-block;
+    // line-height: 1em;
+  }
+
 .contact-container {
     // height: 100vh;
     // padding: 60px 150px;

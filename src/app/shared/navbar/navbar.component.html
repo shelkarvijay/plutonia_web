@@ -5,17 +5,18 @@
     </a>
     <button class="navbar-toggler" type="button" (click)="isCollapsed = !isCollapsed"
           [attr.aria-expanded]="!isCollapsed" aria-controls="navbar_global">
-      <span class="navbar-toggler-icon"></span>
+      <span class="navbar-toggler-icon menu"></span>
     </button>
     <div class="navbar-collapse collapse" id="navbar_global" [ngbCollapse]="isCollapsed">
       <div class="navbar-collapse-header">
-        <div class="row">
-          <div class="col-6 collapse-brand">
+        <div class="row d-flex justify-content-between align-items-center">
+          <div class="col-10 collapse-brand">
             <a [routerLink]="['/']">
-              <img src="./assets/img/brand/blue.png">
+              <!-- <img src="./assets/img/brand/blue.png"> -->
+               Plutonia Dynamics
             </a>
           </div>
-          <div class="col-6 collapse-close">
+          <div class="col-2 collapse-close">
             <button type="button" class="navbar-toggler" (click)="isCollapsed = !isCollapsed"
                   [attr.aria-expanded]="!isCollapsed" aria-controls="navbar_global">
               <span></span>
@@ -28,6 +29,11 @@
         <li class="navbar-li-item">
           <a class="" [routerLink]="['home']">
             <span class="nav-link-inner--text">Home</span>
+          </a>
+        </li>
+        <li class="navbar-li-item">
+          <a class="" [routerLink]="['/about-us']">
+            <span class="nav-link-inner--text">About Us</span>
           </a>
         </li>
         <li class="navbar-li-item">

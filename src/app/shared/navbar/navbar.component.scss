@@ -7,3 +7,14 @@
         color: $main-color;
     }
 }
+
+.menu {
+    background-image: url('../../../assets/img/icons/menu.png') !important;
+}
+
+.collapse-brand a {
+    text-decoration: none;
+    font-size: 25px;
+    font-weight: 700;
+    color: $main-color;
+}

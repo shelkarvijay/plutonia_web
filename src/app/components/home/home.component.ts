@@ -46,7 +46,7 @@ export class HomeComponent {
   isScrollPartners: boolean = false;
 
   @HostListener('window:scroll', ['$event']) getScrollHeight(event: any) {
-    if(window.pageYOffset > 100 ) {
+    if(window.pageYOffset > 130 ) {
       // this.animationState = 'in';
       this.isScrollEfforts = true;
     } else {

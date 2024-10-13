@@ -17,8 +17,12 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import {MatFormFieldModule} from '@angular/material/form-field';
 import {MatInputModule} from '@angular/material/input';
 import {MatIconModule} from '@angular/material/icon';
-import { AboutComponent } from './components/about/about.component';
+import { DescriptionComponent } from './components/description/description.component';
 import { PartnersComponent } from './components/partners/partners.component';
+import { NgImageSliderModule } from 'ng-image-slider';
+import { OurWorkComponent } from './our-work/our-work.component';
+import { AboutUsComponent } from './components/about-us/about-us.component';
+import { FlexLayoutModule } from '@angular/flex-layout';
 
 
 @NgModule({
@@ -30,8 +34,10 @@ import { PartnersComponent } from './components/partners/partners.component';
     SectionsComponent,
     ServicesComponent,
     ContactComponent,
-    AboutComponent,
-    PartnersComponent
+    DescriptionComponent,
+    PartnersComponent,
+    OurWorkComponent,
+    AboutUsComponent
   ],
   imports: [
     BrowserModule,
@@ -44,11 +50,12 @@ import { PartnersComponent } from './components/partners/partners.component';
     ReactiveFormsModule,
     MatFormFieldModule,
     MatInputModule,
-    MatIconModule
-    
+    MatIconModule,
+    NgImageSliderModule,
+    FlexLayoutModule
   ],
   exports: [
-    AboutComponent
+    DescriptionComponent
   ],
   providers: [],
   bootstrap: [AppComponent]

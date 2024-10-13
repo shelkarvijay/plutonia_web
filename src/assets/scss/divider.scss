@@ -60,7 +60,7 @@ body { background: #FCF; }
 
 .left-divider {
     position: relative;
-    animation: myfirst1 5s 1;
+    animation: myfirst1 8s 1;
 }
 
 @keyframes myfirst1 {
@@ -77,7 +77,7 @@ body { background: #FCF; }
 
 .fade-in-text-2 {
     position: relative;
-    animation: myfirst2 5s 1;
+    animation: myfirst2 5s 2;
 }
 
 @keyframes myfirst2 {
@@ -94,7 +94,7 @@ body { background: #FCF; }
 
 .right-divider {
     position: relative;
-    animation: myfirst3 5s 1;
+    animation: myfirst3 8s 2;
 }
 
 @keyframes myfirst3 {
