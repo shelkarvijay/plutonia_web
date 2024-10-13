@@ -19,7 +19,7 @@ import {MatInputModule} from '@angular/material/input';
 import {MatIconModule} from '@angular/material/icon';
 import { DescriptionComponent } from './components/description/description.component';
 import { PartnersComponent } from './components/partners/partners.component';
-import { NgImageSliderModule } from 'ng-image-slider';
+// import { NgImageSliderModule } from 'ng-image-slider';
 import { OurWorkComponent } from './our-work/our-work.component';
 import { AboutUsComponent } from './components/about-us/about-us.component';
 import { FlexLayoutModule } from '@angular/flex-layout';
@@ -51,7 +51,7 @@ import { FlexLayoutModule } from '@angular/flex-layout';
     MatFormFieldModule,
     MatInputModule,
     MatIconModule,
-    NgImageSliderModule,
+    // NgImageSliderModule,
     FlexLayoutModule
   ],
   exports: [
